@@ -46,17 +46,6 @@ country_event = {
     }
 
     option = {
-        name = fatalf.900.d
-        hidden_effect = {
-            set_global_flag = fatalf_overgrowth_disabled
-            country_event = {id = fatalf.900}
-        }
-        trigger = {
-            NOT = {has_global_flag = fatalf_overgrowth_disabled}
-        }
-    }
-
-    option = {
         name = fatalf.900.e
         hidden_effect = {
             remove_global_flag = fatalf_overgrowth_disabled
@@ -68,13 +57,42 @@ country_event = {
     }
 
     option = {
-        name = fatalf.900.f
+        name = fatalf.900.d
         hidden_effect = {
-            set_global_flag = fatalf_hyperlane_disabled
+            set_global_flag = fatalf_overgrowth_guaranteed
             country_event = {id = fatalf.900}
         }
         trigger = {
-            NOT = {has_global_flag = fatalf_hyperlane_disabled}
+            NOR = {
+                has_global_flag = fatalf_overgrowth_disabled
+                has_global_flag = fatalf_overgrowth_guaranteed
+            }
+            
+        }
+    }
+
+    option = {
+        name = fatalf.900.j
+        hidden_effect = {
+            set_global_flag = fatalf_overgrowth_disabled
+            remove_global_flag = fatalf_overgrowth_guaranteed
+            country_event = {id = fatalf.900}
+        }
+        trigger = {
+            has_global_flag = fatalf_overgrowth_guaranteed
+        }
+    }
+
+    option = {
+        name = fatalf.900.i
+        custom_tooltip = fatalf.900.i.tip
+        hidden_effect = {
+            set_global_flag = fatalf_hyperlane_disabled
+            remove_global_flag = fatalf_hyperlane_guaranteed
+            country_event = {id = fatalf.900}
+        }
+        trigger = {
+            has_global_flag = fatalf_hyperlane_guaranteed
         }
     }
 
@@ -86,6 +104,20 @@ country_event = {
         }
         trigger = {
             has_global_flag = fatalf_hyperlane_disabled
+        }
+    }
+
+    option = {
+        name = fatalf.900.f
+        hidden_effect = {
+            set_global_flag = fatalf_hyperlane_guaranteed
+            country_event = {id = fatalf.900}
+        }
+        trigger = {
+            NOR = {
+                has_global_flag = fatalf_hyperlane_disabled
+                has_global_flag = fatalf_hyperlane_guaranteed
+            }
         }
     }
 

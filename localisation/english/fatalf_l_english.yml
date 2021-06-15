@@ -71,7 +71,7 @@
   seed_army_desc:0 "An unrelentless living spore that infects every living thing it touches."
 
   LOST_DESIRE_PROJECT:0 "Explore the Temple"
-  LOST_DESIRE_PROJECT_DESC:0 "A mysterious temple has appeared on [Root.GetName]. We think it must have something to do with the coordinates we found. We should explore it as soon as possible."
+  LOST_DESIRE_PROJECT_DESC:0 "A mysterious temple has appeared on [desire_planet_1.GetName]. We think it must have something to do with the coordinates we found. We should explore it as soon as possible."
   WHITE_HOLE_STUDY:0 "Study the Anomaly"
   WHITE_HOLE_STUDY_DESC:0 "The electromagnetic anomaly has stabilized above [Root.GetName]. We must study it and find a possible way to close it before it disappears."
 

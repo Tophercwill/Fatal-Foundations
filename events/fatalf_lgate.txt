@@ -10,8 +10,7 @@ country_event = {
 		while = {
 			limit = {
 				any_system = {
-					any_neighbor_system = {
-						ignore_hyperlanes = no
+					any_neighbor_system_euclidean = {
 						has_hyperlane_to = prev
 					}
 				}
@@ -21,13 +20,11 @@ country_event = {
 					NOT = {
 						has_star_flag = lcluster
 					}
-					any_neighbor_system = {
-						ignore_hyperlanes = no
+					any_neighbor_system_euclidean = {
 						has_hyperlane_to = prev
 					}
 				}
-				random_neighbor_system = {
-					ignore_hyperlanes = no
+				random_neighbor_system_euclidean = {
 					limit = {
 						has_hyperlane_to = prev
 					}
@@ -66,8 +63,7 @@ country_event = {
 			}
 			random_list = {
 				2 = {
-					random_neighbor_system = {
-						ignore_hyperlanes = yes
+					random_neighbor_system_euclidean = {
 						limit = {
 							NOR = {
 								has_hyperlane_to = prev
@@ -83,8 +79,7 @@ country_event = {
 				1 = {
 					while = {
 						count = 2
-						random_neighbor_system = {
-							ignore_hyperlanes = yes
+						random_neighbor_system_euclidean = {
 							limit = {
 								NOR = {
 									has_hyperlane_to = prev
@@ -127,10 +122,20 @@ ship_event = {
 
 	immediate = {
 		set_global_flag = lgate_start_colonization
-		random_list = {
-			1 = {owner = {country_event = {id = fatalf.054}}}
-			2 = {}
+		if = {
+			limit = {
+				has_global_flag = fatalf_hyperlane_guaranteed
+			}
+			owner = {country_event = {id = fatalf.054}}
 		}
+		
+		else = {
+			random_list = {
+				1 = {owner = {country_event = {id = fatalf.054}}}
+				2 = {}
+			}
+		}
+		
 	}
 
 }
@@ -183,7 +188,7 @@ country_event = {
 	}
 }
 
-#Check for owning all L-Gates - event trigger country
+#Check for owning all L-Gates - event trigger country    ####TO BE DEPRECATED AND REPLACED####
 country_event = {
 	id = fatalf.056
 	hide_window = yes
@@ -296,7 +301,7 @@ country_event = {
 	option = {
 		name = fatalf.057.c
 		custom_tooltip = fatalf.machine_dismantled.tip
-		add_modifier = {modifier = fatalf_hyperlane_machine_dismantled days = -1}
+		add_modifier = {modifier = fatalf_hyperlane_machine_dismantled days = -1 }
 		hidden_effect = {
 			set_global_flag = hyperlane_quest_done
 		}
@@ -348,7 +353,7 @@ country_event = {
 				location = event_target:fatalf_hyperlane_2 
 			}
 		}
-		country_event = {id = fatalf.058 days = 540 random = 180} #RECURSE!
+		country_event = {id = fatalf.058 days = 1500 random = 180} #RECURSE!
 		country_event = {id = fatalf.158 days = 180} #Add/remove bridges
 
 	}
@@ -462,7 +467,8 @@ country_event = {
 ################################################################
 
 #SoS and Sun Devourer Gatekeeper
-event = {
+
+country_event = {
 	id = fatalf.159
 	hide_window = yes
 	fire_only_once = yes

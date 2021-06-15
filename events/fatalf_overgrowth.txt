@@ -3,21 +3,33 @@ namespace = fatalf
 #Overgrowth Starter
 event = {
 	id = fatalf.132
-	hide_window = yes
 	is_triggered_only = yes
+	hide_window = yes
 
 	immediate = {
-		random_list = {
-			35 = {
-				random_country = {
-					limit = {
-						is_country_type = global_event
-					}
-					country_event = {id = fatalf.030 days = 360 random = 32400}
+		if = {
+			limit = {has_global_flag = fatalf_overgrowth_guaranteed}
+			random_country = {
+				limit = {
+					is_country_type = global_event
 				}
+				country_event = {id = fatalf.030 days = 1080 random = 1080}
 			}
-			65 = {log = "Failed Overgrowth Roll"}
 		}
+		else = {
+			random_list = {
+				30 = {
+					random_country = {
+						limit = {
+							is_country_type = global_event
+						}
+						country_event = {id = fatalf.030 days = 1080 random = 1080}
+					}
+				}
+				70 = {log = "Failed Overgrowth Roll"}
+			}
+		}
+		
 	}
 }
 
@@ -71,7 +83,7 @@ country_event = {
 		create_country = {
 			name = "Overgrowth"
 			type = "overgrowth_country"
-			species = last_created
+			species = last_created_species
 			name_list = "Overgrowth"
 			flag = {
 				icon= {
@@ -246,6 +258,14 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	location = root
+
+	trigger = {
+		NOT = {
+			owner = {
+				is_primitive = yes
+			}
+		}
+	}
 	
 	immediate = {
 		if = {						#AI colonies will only spread 5 times
@@ -431,23 +451,23 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = fatalf.0303
-	title = "fatalf.0303.name"
-	desc = "fatalf.0303.desc"
-	picture = GFX_evt_exploding_ship
-	is_triggered_only = yes
-	location = root
+# country_event = {
+# 	id = fatalf.0303
+# 	title = "fatalf.0303.name"
+# 	desc = "fatalf.0303.desc"
+# 	picture = GFX_evt_exploding_ship
+# 	is_triggered_only = yes
+# 	location = root
 	
-	trigger = {
-		from = {
-			is_country = event_target:overgrowth
-		}
-	}
-	option = {
-		name = fatalf.0303.a
-	}
-}
+# 	trigger = {
+# 		from = {
+# 			is_country = event_target:overgrowth
+# 		}
+# 	}
+# 	option = {
+# 		name = fatalf.0303.a
+# 	}
+# }
 
 planet_event = {
 	id = fatalf.0304
@@ -489,7 +509,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				any_ship = {
+				any_owned_ship = {
 					exists = owner
 					owner = {is_same_empire = event_target:overgrowth}
 				}

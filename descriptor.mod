@@ -1,9 +1,9 @@
-name="Fatal Foundations Story Pack [2.5]"
-path="C:/Users/Chris Williams/Documents/Paradox Interactive/Stellaris/mod/fatalf"
+name="Fatal Foundations Story Pack [3.0]"
 tags={
 	"Events"
 	"Gameplay"
 }
 picture="fatalf.png"
-supported_version="2.5.*"
+supported_version="3.0.*"
+path="C:/Users/Chris Williams/Documents/Paradox Interactive/Stellaris/mod/fatalf"
 remote_file_id="1607524900"

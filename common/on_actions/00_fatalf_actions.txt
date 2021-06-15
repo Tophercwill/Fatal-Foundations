@@ -1,9 +1,3 @@
-on_mid_game_pulse = {
-	events ={
-		fatalf.132
-	}
-}
-
 # A ship has surveyed a planet.
 # Scope = Ship
 # From = Planet
@@ -19,6 +13,11 @@ on_survey = {
 	}
 }
 
+on_mid_game_pulse = {
+	events = {
+		fatalf.132
+	}
+}
 
 on_ship_destroyed_perp = {
 	events = {

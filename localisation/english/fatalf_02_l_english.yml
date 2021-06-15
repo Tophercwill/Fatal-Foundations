@@ -1,6 +1,6 @@
 ﻿l_english:
-  fatalf.061_a_tooltip:0 "Give all §Y[Root.Owner.GetSpeciesName]§! pops the §Y$trait_architect_adaptive_good$§! trait, providing:\n     +25% §YHabitability§! and -15% §YGrowth Speed§!"
-  fatalf.061_b_tooltip:0 "Give all §Y[Root.Owner.GetSpeciesName]§! pops the §Y$trait_architect_intelligent_good$§! trait, providing:\n     +10% §YScience Output§! and -55% §YEthics Attraction§!"
+  fatalf.061_a_tooltip:0 "Give all §Y[Root.Owner.GetSpeciesName]§! pops the §Y$trait_architect_adaptive_good$§! trait, providing:\n     +15% §YHabitability§! and -20% §YGrowth Speed§!"
+  fatalf.061_b_tooltip:0 "Give all §Y[Root.Owner.GetSpeciesName]§! pops the §Y$trait_architect_intelligent_good$§! trait, providing:\n     +10% §YScience Output§! and -30% §YEthics Attraction§!"
   fatalf.061_c_tooltip:0 "Give all §Y[Root.Owner.GetSpeciesName]§! pops the §Y$trait_architect_industrious_good$§! trait, providing:\n     +10% §YMineral and Consumer Goods Output§! and -15% §YFood Growth§!"
 
   fatalf.054.title:0 "The L-Gates Reactivate"
@@ -25,13 +25,13 @@
   fatalf.153.desc:0 "The system §Y[eaten_sun.GetName]§!, where the strange signals were coming from, has completely disappeared from our sensors! Everything within has been lost to someplace unknown."
 
   fatalf.060.title:0 "Strange Actions"
-  fatalf.060.desc:0 "Several thousand citizens in your empire have suddenly stopped what they were doing, and have begun to collect materials to build several structures of unknown design. All attempts to talk to affected individuals has been unsucessful."
+  fatalf.060.desc:0 "Several thousand citizens in our empire have suddenly stopped what they were doing, and have begun to collect materials to build several structures of unknown design. All attempts to talk to affected individuals has been unsucessful."
   fatalf.061.title:0 "THE ARCHITECTS"
   fatalf.061.desc:0 "Soon enough, the structures are complete. All affected citizens are now standing still and speaking simultaneously.\n §M<WE ARCHITECTS WE HELP NOT BAD WANT SUCCESS NOT ALL CARE WANT VICTORY HARDSHIP COMES ACCEPT HELP STEP IN>"
   fatalf.064.title:0 "GOOD"
-  fatalf.064.desc:0 "As you accept the mysterious offer, the structures begin to shake wildly until they collapse. There appears to be no obvious change.\n \n§M<MAKE WORTH MAY GOOD CIRCLE EQUAL LATER BAD CIRCLE YOU>"
+  fatalf.064.desc:0 "As we accept the mysterious offer, the structures begin to shake wildly until they collapse. There appears to be no obvious change.\n \n§M<MAKE WORTH MAY GOOD CIRCLE EQUAL LATER BAD CIRCLE YOU>"
   fatalf.065.title:0 "FOOL"
-  fatalf.065.desc:0 "As you reject the mysterious offer, all affected individuals immediately collapse to the ground, dead.\n \n§M<YOU FOOL WE HELP NOT YOU>"
+  fatalf.065.desc:0 "As we reject the mysterious offer, all affected individuals immediately collapse to the ground, dead.\n \n§M<YOU FOOL WE HELP NOT YOU>"
 
   fatalf.161.title:0 "Strange Dreams"
   fatalf.161.desc:0 "There have been reports from §Y[Root.GetHomeWorldName]§! that numerous citizens are complaining of strange, surreal dreams. They seem to be different for each person, but no one can agree on a meaning."
@@ -44,7 +44,7 @@
   fatalf.171.desc:0 "A large energy surge has been detected near §Y[Root.GetHomeWorldName]§!. Something is coming, but we have no way of telling what it may be."
   fatalf.071.title:0 "???"
   fatalf.071.desc:0 "I am [lost_country.GetRulerTitle] [lost_country.GetRulerName] of the [lost_country.GetName]. Please pardon our sudden arrival, but time was of the essence, and our empire was far too lost to help, so we fled through a dimensional rift we were researching. From what we see, we are you, but traveled along a different path, so we hope that you will assist us. We have far too many citizens, and far too few resources. Will you help us?"
-  fatalf.071.response:0 "Our technology had advanced to a similar point as yours not too long ago, when we made a grave mistake. A certain harmful fungus that we were studying had achieved rapid mutation into a sort of deadly pathogen. By the time we discovered the cause, our entire empire was affected. We were able to create a vaccine for the few who still lived, and spent all of our remaining resources finding a way through the rift we previously discovered."
+  fatalf.071.response:0 "Our technology had advanced to a similar point as yours not too long ago when we made a grave mistake. A certain harmful fungus that we were studying had achieved rapid mutation into a sort of deadly pathogen. By the time we discovered the cause, our entire empire was affected. We were able to create a vaccine for the few who still lived, and spent all of our remaining resources finding a way through the rift we previously discovered."
   fatalf.072.title:0 "Dimensional Refugees"
   fatalf.072.desc_01:0 "You accepted new arrivals from the [lost_country.GetName] into your empire. They are extremely grateful, and promise to live their role in society, whatever it may be. The rest of the population has set out through the galaxy to expand."
   fatalf.072.desc_02:0 "You gave some of your hard-earned resources to the [lost_country.GetName]. They are extremely grateful, and set off through the galaxy to expand, now that they have the materials to do so."

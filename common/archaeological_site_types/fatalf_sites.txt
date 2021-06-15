@@ -1,16 +1,13 @@
-namespace = fatalf_site
-
 #The Competition
 fatalf_site_competition = {
 	desc = "fatalf_site_competition_desc"
 	picture = GFX_evt_archaeology_camp
 	stages = 3
 	weight = {
-		base = 0
+		base = 100
 		modifier = {
-			add = 100
+			factor = 0
 			is_planet_class = pc_gas_giant
-			has_ancrel = yes
 		}
 	}
 

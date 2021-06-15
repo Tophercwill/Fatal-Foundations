@@ -425,7 +425,7 @@ ship_event = {
 }
 #Rosetta Stone
 ship_event = {
-	id = fatalf_anomaly.16
+	id = fatalf_anomaly.016
 	title = fatalf_anomaly.016.title
 	desc = fatalf_anomaly.016.desc
 	picture = GFX_evt_alien_planet
@@ -446,7 +446,7 @@ ship_event = {
 }
 
 ship_event = {
-	id = fatalf_anomaly.17
+	id = fatalf_anomaly.017
 	title = fatalf_anomaly.017.title
 	desc = fatalf_anomaly.017.desc
 	picture = GFX_evt_alien_planet
